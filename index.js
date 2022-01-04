@@ -10,11 +10,9 @@ var config = {
 showSlides(slideIndex);
 displayText();
 
-function check() {
-    var button_check = document.getElementById("button_check");
-    button_check.classList.toggle("mystyle");
-    var trueShow = button_check.className;
-    if (trueShow) {
+function check(t) {
+
+    if (t == true) {
         config.showText = true;
     } else {
         config.showText = false;
